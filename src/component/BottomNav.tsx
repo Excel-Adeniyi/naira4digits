@@ -41,7 +41,7 @@ function BottomNav() {
 
             </Linksdiv>
 
-            <Linksdiv className='col pt-3' >
+            <Linksdiv className='col col-sm-3 pt-3 me-md-3 me-sm-5' >
                 <h5>Contact</h5>
 
                 <div className='navbar-item'>Address: 2, James estate, Lekki, Lagos.</div>
@@ -52,7 +52,7 @@ function BottomNav() {
 
             </Linksdiv></div>
             
-            <Linksdiv className='col pt-3 d-flex container me-5 justify-content-end' >
+            <Linksdiv className='col pt-3 d-flex container me-5 me-md-3 justify-content-end' >
                 <p>© 2022 || Naira4Digits </p>
 
 
