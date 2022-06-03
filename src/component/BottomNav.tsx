@@ -44,7 +44,7 @@ function BottomNav() {
             <Linksdiv className='col pt-3 me-md-3 container' >
                 <h5>Contact</h5>
 
-                <div className='navbar-item'>Address: 2, James estate, Lekki, Lagos.</div>
+                <div className='col-7'>Address: 2, James estate, Lekki, Lagos.</div>
                 <div>Email: email@gmail.com</div>
                 <div> Phone:08012345676 </div>
 
