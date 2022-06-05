@@ -19,9 +19,9 @@ function BottomNav() {
                 <h5 style={{ color: "black" }}><img src={logo} alt="logo" width={"40px"} />
                     aira4Digits
                 </h5>
-                <p style={{color:"black", fontSize: '12px'}}> Naira4Coin is a bitcoin buying platform. We have the potential of buying any amount of bitcoin and make payment instantly.</p>
+                <p style={{color:"#835ba4", fontWeight: 'bolder',fontSize: '16px'}}> Naira4Coin is a bitcoin buying platform. We have the potential of buying any amount of bitcoin and make payment instantly.</p>
                
-                <div style={{ color: "black" }} className='row col-12 mt-3 mt-xl-4 mt-lg-4 '>
+                <div style={{ color: "#835ba4" }} className='row col-12 mt-3 mt-xl-4 mt-lg-4 '>
                     <div className='col-sm-3 col'> <FontAwesomeIcon icon={faFacebook} /></div>
 
                     <div className='col-sm-3 col'><FontAwesomeIcon icon={faTwitter} /></div>
@@ -29,8 +29,8 @@ function BottomNav() {
                     <div className='col-sm-3 col'> <FontAwesomeIcon icon={faWhatsapp} /></div>
 
                 </div></div>
-            <Linksdiv className='col-md-2 col-lg-2 col-sm-2 col-4 col-xl-4 pt-3' >
-                <h5>Links</h5>
+            <Linksdiv className='col-md-2 col-lg-2 col-sm-2 col-4 col-xl-4 pt-3' style={{color: '#835ba4'}} >
+                <h3>Links</h3>
 
                 <div className='navbar-item'>Home</div>
                 <div>About</div>
@@ -41,7 +41,7 @@ function BottomNav() {
 
             </Linksdiv>
 
-            <Linksdiv className='col pt-3 me-md-3 container' >
+            <Linksdiv className='col pt-3 me-md-3 container'style={{color: '#835ba4'}} >
                 <h5>Contact</h5>
 
                 <div className='col-7'>Address: 2, James estate, Lekki, Lagos.</div>
@@ -52,7 +52,7 @@ function BottomNav() {
 
             </Linksdiv></div>
             
-            <Linksdiv className='col pt-3 d-flex container me-5 me-md-3 justify-content-end' >
+            <Linksdiv className='col pt-3 d-flex container me-5 me-md-3 justify-content-center'style={{color: '#835ba4'}}  >
                 <p>© 2022 || Naira4Digits </p>
 
 
@@ -66,6 +66,7 @@ export default BottomNav
 
 const Linksdiv = styled.div`
 color: black;
-font-size: 12px;
+font-size: 16px;
+font-weight: bold;
 
 `
