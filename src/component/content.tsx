@@ -169,7 +169,8 @@ function content() {
           naturalSlideHeight={200}
           isIntrinsicHeight
           infinite
-          interval={500}
+          hasMasterSpinner
+          interval={800}
           isPlaying 
           >
           <Slider>
