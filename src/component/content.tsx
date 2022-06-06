@@ -273,7 +273,7 @@ function content() {
           <div className='row d-flex  justify-content-center'>
             <div className='col-lg-2 col-5 col-sm-5'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faApple} /> DOWNLOAD ON <br /> Apple Store</button></div>
 
-            <div className='col-lg-2 col-5 col-sm-5'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faGooglePlay} /> DOWNLOAD ON <br />PlayStore</button></div>
+            <div className='col-lg-2 col-5 col-sm-5'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faGooglePlay} /> DOWNLOAD<br />ON PlayStore</button></div>
           </div>
         </div>
       </div>
