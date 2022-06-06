@@ -2,6 +2,10 @@
     "name": "naira_app",
     "version": "0.1.0",
     "private": true,
+    "engines": {
+        "node": "16.15.0",
+        "npm": "8.5.5"
+    },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
         "@fortawesome/free-brands-svg-icons": "^6.1.1",
