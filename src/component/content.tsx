@@ -216,13 +216,13 @@ function content() {
 
       </NumberDiv>
 
-      <div className='container pe-5 ps-5 mb-5' >
+      <div className='container mb-5' >
         <div className='card rounded-5' style={{ overflowX: 'hidden' }}>
           <CarouselProvider
             visibleSlides={3}
             totalSlides={12}
             step={1}
-            className=" pb-5 pt-5"
+            className=" pb-2 pt-2"
             naturalSlideWidth={400}
             naturalSlideHeight={500}
             isIntrinsicHeight
@@ -237,17 +237,17 @@ function content() {
 
               <Slide index={0}>
                 <div className='container'><img src={amazon} className="w-100 col-3 rounded" alt="set" /></div></Slide>
-              <Slide index={1}><div className='container'><img src={dominos} className="w-100 col-3 rounded" alt="dominos" /></div></Slide>
-              <Slide index={2}><div className='container'><img src={ebay} className="w-100 rounded col-3" alt="ebay" /></div></Slide>
-              <Slide index={3}><div className='container'><img src={gamestop} className="w-100 rounded col-3" alt='gamestop' /></div></Slide>
-              <Slide index={4}><div className='container'><img src={google} className="w-100 rounded col-3" alt="google" /></div></Slide>
-              <Slide index={5}><div className='container'><img src={hulu} className="w-100 rounded col-3" alt="hulu" /></div></Slide>
-              <Slide index={6}><div className='container'><img src={itunes} alt="itunes" className='w-100 rounded col-3' /></div></Slide>
-              <Slide index={7}><div className='container'><img src={netflix} alt="netflix" className='w-100 rounded col-3' /></div></Slide>
-              <Slide index={8}><div className='container'><img src={sephora} alt="sephora" className='w-100 rounded col-3<' /></div></Slide>
-              <Slide index={9}><div className='container'><img src={spotify} alt="spotify" className='w-100 rounded col-12' /></div></Slide>
-              <Slide index={10}><div className='container col-12'><img src={uber} alt="uber" className='w-100 rounded col-12' /></div></Slide>
-              <Slide index={11}><div className='container col-12'><img src={walmart} alt="walmart" className="w-100 rounded col-12" /></div></Slide>
+              <Slide index={1}><div className='container'><img src={dominos} className="w-100 col-5 rounded" alt="dominos" /></div></Slide>
+              <Slide index={2}><div className='container'><img src={ebay} className="w-100 rounded col-5" alt="ebay" /></div></Slide>
+              <Slide index={3}><div className='container'><img src={gamestop} className="w-100 rounded col-5" alt='gamestop' /></div></Slide>
+              <Slide index={4}><div className='container'><img src={google} className="w-100 rounded col-5" alt="google" /></div></Slide>
+              <Slide index={5}><div className='container'><img src={hulu} className="w-100 rounded col-5" alt="hulu" /></div></Slide>
+              <Slide index={6}><div className='container'><img src={itunes} alt="itunes" className='w-100 rounded col-5' /></div></Slide>
+              <Slide index={7}><div className='container'><img src={netflix} alt="netflix" className='w-100 rounded col-5' /></div></Slide>
+              <Slide index={8}><div className='container'><img src={sephora} alt="sephora" className='w-100 rounded col-5<' /></div></Slide>
+              <Slide index={9}><div className='container'><img src={spotify} alt="spotify" className='w-100 rounded col-5' /></div></Slide>
+              <Slide index={10}><div className='container'><img src={uber} alt="uber" className='w-100 rounded col-5' /></div></Slide>
+              <Slide index={11}><div className='container'><img src={walmart} alt="walmart" className="w-100 rounded col-5" /></div></Slide>
 
             </Slider>
 
