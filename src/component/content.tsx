@@ -1,6 +1,20 @@
-import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons'
+import { faApple, faGooglePlay, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faRightLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import tether from '../img/tether.png'
+import amazon from '../img/new/Giftcards/amazon-340w.webp'
+import dominos from '../img/new/Giftcards/dominos-340w.png'
+import ebay from '../img/new/Giftcards/ebay-340w.webp'
+import gamestop from '../img/new/Giftcards/gamestop-340w.png'
+import google from '../img/new/Giftcards/google-play-340w.webp'
+import hulu from '../img/new/Giftcards/hulu-340w.png'
+import itunes from '../img/new/Giftcards/itunes-340w.webp'
+import netflix from '../img/new/Giftcards/netflix-340w.png'
+import sephora from '../img/new/Giftcards/sephora-340w.webp'
+import spotify from '../img/new/Giftcards/spotify-340w.png'
+import uber from '../img/new/Giftcards/uber-white.webp'
+import walmart from '../img/new/Giftcards/walmart-340w.webp'
+import whatsapp from '../img/new/whatsapp.jpg'
 import React from 'react'
 import styled from 'styled-components'
 import btc from '../img/bitcoin.png'
@@ -12,15 +26,16 @@ import one from '../img/image/1.png'
 import two from '../img/image/2.png'
 import three from '../img/image/3.png'
 import Backg from '../img/image/nairaM.png'
-import Giftcard from '../img/image/m3.png'
+import Giftcard from '../img/new/3s.png'
 import Mobile from '../img/image/1g.gif'
+import { ButtonBack, ButtonFirst, ButtonLast, ButtonNext, ButtonPlay, CarouselProvider, Slide, Slider } from 'pure-react-carousel'
 
 function content() {
   return (
     <div>
       <DaveDiv>
         <div className='pt-5 pb-3'>
-          <h3><span style={{ color: 'purple', background: 'white', }}>Welcome to</span><span style={{ color: 'white', background: 'purple', }}>Naira4Digits</span></h3>
+          <h3><span style={{ color: '#835ba4', background: 'white', }}>Welcome to</span><span style={{ color: 'white', background: '#835ba4', }}>Naira4Digits</span></h3>
           <div className='pt-5'><p>Get the best</p></div>
 
         </div>
@@ -34,36 +49,45 @@ function content() {
         </div>
 
         <div className='container row '>
+
           <table className='w-sm-50'>
             <thead>
-              <tr><th className='pe-5 text-center'>Country</th>
-                <th className='pe-5 text-center'>Currency</th>
-                <th className='pe-5 text-center' >Quantity</th>
+              <tr><th className=' text-center'>Currency</th>
+                <th className=' text-center'>Buy</th>
+
                 <th></th>
-                <th className='pe-5 text-center'>Per USD</th></tr>
+                <th className=' text-center'>Sell</th></tr>
             </thead>
 
             <tbody>
               <tr>
-                <th className='pe-5'><img src={btc} alt="btc logo" width="20px" /></th>
-                <th className='pe-5'>NGN <img src={ngn} alt="btc logo" width="15px" /></th>
-                <th className='pe-5'>1</th>
-                <th className='pe-5'> <FontAwesomeIcon icon={faRightLeft} /></th>
-                <th className='pe-5'>500</th>
+                <th className=''><img src={btc} alt="btc logo" width="20px" /></th>
+                <th className=''>500</th>
+
+                <th className=''> <FontAwesomeIcon icon={faRightLeft} /></th>
+                <th className=''>500</th>
               </tr>
               <tr>
-                <th className='pe-5'><img src={eth} alt="eth logo" width="20px" /></th>
-                <th className='pe-5'>NGN <img src={ngn} alt="btc logo" width="15px" /></th>
-                <th className='pe-5'>1</th>
-                <th className='pe-5'><FontAwesomeIcon icon={faRightLeft} /></th>
-                <th className='pe-5'>500</th>
+                <th className=''><img src={eth} alt="eth logo" width="20px" /></th>
+                <th className=''>500</th>
+
+                <th className=''><FontAwesomeIcon icon={faRightLeft} /></th>
+                <th className=''>500</th>
               </tr>
               <tr>
-                <th className='pe-5'><img src={lit} alt="lit logo" width="20px" /></th>
-                <th className='pe-5'>NGN <img src={ngn} alt="btc logo" width="10px" /></th>
-                <th className='pe-5'>1</th>
-                <th className='pe-5'> <FontAwesomeIcon icon={faRightLeft} /></th>
-                <th className='pe-5'>500</th>
+                <th className=''><img src={lit} alt="lit logo" width="20px" /></th>
+                <th className=''>500</th>
+
+                <th className=''> <FontAwesomeIcon icon={faRightLeft} /></th>
+                <th className=''>500</th>
+              </tr>
+
+              <tr>
+                <th className=''><img src={tether} alt="lit logo" width="20px" /></th>
+                <th className=''>500</th>
+
+                <th className=''> <FontAwesomeIcon icon={faRightLeft} /></th>
+                <th className=''>500</th>
               </tr>
             </tbody>
           </table>
@@ -141,20 +165,21 @@ function content() {
           <div className='row d-flex justify-content-center'>
             <div className='container col-10 col-lg-4  ' style={{ background: '#835ba4' }}>
               <img src={one} alt='one' width={'100%'} />
-              <h4 className='text-light pt-4 pb-4'>Step One</h4>
-              <p className='text-light pb-5'>Dowload our mobile app or <br /> visit our website to get started</p>
+              <h4 className='text-light pt-4 pb-4 text-bold' style={{ fontSize: 'bolder' }}>Step One</h4>
+              <p className='text-light pb-5 '>Dowload our mobile app or <br /> visit our website to get started</p>
             </div>
 
             <div className='container col-10 col-lg-4' style={{ background: '#835ba4' }}>
               <img src={two} alt='one' width={'100%'} />
-              <h2 className='text-light pt-4 pb-4'>Step Two</h2>
+              <h2 className='text-light pt-4 pb-4 bold' style={{ fontSize: 'bolder' }}>Step Two</h2>
               <p className='text-light'>Register a free account with us and<br />  get dedicated wallet’s for all type of trades</p>
 
             </div>
 
+
             <div className='container col-10 col-lg-4 ' style={{ background: '#835ba4' }}>
               <img src={three} alt='one' width={'100%'} />
-              <h4 className='text-light pt-4 pb-4'>Step Three</h4>
+              <h4 className='text-light pt-4 pb-4 bold' style={{ fontSize: 'bolder' }}>Step Three</h4>
               <p className='text-light'>Bitcoin, Ethereum, Litecoin,<br /> Giftcards & many more ease</p>
 
             </div>
@@ -163,6 +188,39 @@ function content() {
 
 
       </NumberDiv>
+
+
+
+      <CarouselProvider
+        visibleSlides={3}
+        totalSlides={11}
+        step={1}
+        className=" pb-5 pt-5 container"
+        naturalSlideWidth={400}
+        naturalSlideHeight={500}
+        isIntrinsicHeight>
+
+
+        <Slider>
+
+          <Slide index={0}><img src={amazon} className="w-75 col-4 rounded" alt="set" /></Slide>
+          <Slide index={1}><img src={dominos} className="w-75 col-4 rounded" alt="dominos" /></Slide>
+          <Slide index={2}><img src={ebay} className="w-75 rounded col-4" alt="ebay" /></Slide>
+          <Slide index={3}><img src={gamestop} className="w-75 rounded col-4" alt='gamestop' /></Slide>
+          <Slide index={4}><img src={google} className="w-75 rounded col-4" alt="google" /></Slide>
+          <Slide index={5}><img src={hulu} className="w-75 rounded col-4" alt="hulu" /></Slide>
+          <Slide index={6}><img src={itunes} alt="itunes" className='w-75 rounded col-4' /></Slide>
+          <Slide index={7}><img src={netflix} alt="netflix" className='w-75 rounded col-4' /></Slide>
+          <Slide index={8}><img src={sephora} alt="sephora" className='w-75 rounded col-4' /></Slide>
+          <Slide index={9}><img src={spotify} alt="spotify" className='w-75 rounded col-4' /></Slide>
+          <Slide index={10}><img src={uber} alt="uber" className='w-75 rounded col-4' /></Slide>
+          <Slide index={11}><img src={walmart} alt="walmart" className="w-75 rounded col-4" /></Slide>
+
+        </Slider>
+
+
+      </CarouselProvider>
+
 
       <div className='w-100'>
         <img src={Giftcard} alt="giftcard" width={"90%"} />
@@ -180,10 +238,17 @@ function content() {
         <div className='pb-4'>
           <p style={{ color: '#835ba4', fontWeight: 'bolder', fontSize: '20px' }}>Download our mobile app on your mobile phone easily </p>
           <div className='row d-flex  justify-content-center'>
-            <div className='col-lg-2 col-5 col-sm-5'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faApple}/> DOWNLOAD ON <br/> Apple Store</button></div>
+            <div className='col-lg-2 col-5 col-sm-5'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faApple} /> DOWNLOAD ON <br /> Apple Store</button></div>
 
-            <div className='col-lg-2 col-5 col-sm-2'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faGooglePlay}/> DOWNLOAD ON <br/> PlayStore</button></div>
+            <div className='col-lg-2 col-5 col-sm-2'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faGooglePlay} /> DOWNLOAD ON <br /> PlayStore</button></div>
           </div>
+        </div>
+      </div>
+
+      <div className='pb-5 container'>
+        <img src={whatsapp} alt='whatsapp' className='col-12'/>
+        <div className='pb-5'>
+          <button className='btn rounded text-light' style={{ background: '#835ba4' }}><FontAwesomeIcon icon={faWhatsapp} /> Chat with us on whatsapp</button>
         </div>
       </div>
 
@@ -206,6 +271,10 @@ background-size: 100rem;
 background-repeat: no-repeat
 
 `
-
+const SetDiv = styled.div`
+.carousel-item{
+  transition: width 2s,
+}
+`
 
 
