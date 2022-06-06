@@ -33,6 +33,8 @@ import { ButtonBack, ButtonFirst, ButtonLast, ButtonNext, ButtonPlay, CarouselPr
 function content() {
   return (
     <div>
+
+   
       <DaveDiv>
         <div className='pt-5 pb-3'>
           <h3><span style={{ color: '#835ba4', background: 'white', }}>Welcome to</span><span style={{ color: 'white', background: '#835ba4', }}>Naira4Digits</span></h3>
@@ -157,6 +159,31 @@ function content() {
 
 
       </DaveDiv>
+      <div style={{overflowX: 'hidden'}} className="card">
+        <CarouselProvider
+          visibleSlides={3}
+          totalSlides={8}
+          step={1}
+          className=" pb-1 pt-2"
+          naturalSlideWidth={100}
+          naturalSlideHeight={200}
+          isIntrinsicHeight
+          infinite
+          interval={500}
+          isPlaying 
+          >
+          <Slider>
+            <Slide index={0}><p style={{fontSize: '12px'}}><img src={btc} alt="btc" width={"20px"} />NGN590/USD</p></Slide>
+            <Slide index={1}><p style={{fontSize: '12px'}}><img src={eth} alt="btc" width={"20px"} />NGN460/USD</p></Slide>
+            <Slide index={2}><p style={{fontSize: '12px'}}><img src={lit} alt="btc" width={"20px"} />NGN500/USD</p></Slide>
+            <Slide index={3}><p style={{fontSize: '12px'}}><img src={tether} alt="btc" width={"20px"} />NGN430/USD</p></Slide>
+            <Slide index={0}><p style={{fontSize: '12px'}}><img src={btc} alt="btc" width={"20px"} />NGN590/USD</p></Slide>
+            <Slide index={1}><p style={{fontSize: '12px'}}><img src={eth} alt="btc" width={"20px"} />NGN460/USD</p></Slide>
+            <Slide index={2}><p style={{fontSize: '12px'}}><img src={lit} alt="btc" width={"20px"} />NGN500/USD</p></Slide>
+            <Slide index={3}><p style={{fontSize: '12px'}}><img src={tether} alt="btc" width={"20px"} />NGN430/USD</p></Slide>
+          </Slider>
+        </CarouselProvider>
+      </div>
       <NumberDiv>
         <div className='pt-5 pb-5'>
           <div className='pb-3 container'>
@@ -189,39 +216,45 @@ function content() {
 
       </NumberDiv>
 
+      <div className='container pe-5 ps-5 mb-5' >
+        <div className='card rounded-5' style={{ overflowX: 'hidden' }}>
+          <CarouselProvider
+            visibleSlides={3}
+            totalSlides={12}
+            step={1}
+            className=" pb-5 pt-5"
+            naturalSlideWidth={400}
+            naturalSlideHeight={500}
+            isIntrinsicHeight
+            infinite
+            interval={1500}
+            isPlaying
+
+          >
 
 
-      <CarouselProvider
-        visibleSlides={3}
-        totalSlides={11}
-        step={1}
-        className=" pb-5 pt-5 container"
-        naturalSlideWidth={400}
-        naturalSlideHeight={500}
-        isIntrinsicHeight>
+            <Slider>
+
+              <Slide index={0}>
+                <div className='container'><img src={amazon} className="w-100 col-3 rounded" alt="set" /></div></Slide>
+              <Slide index={1}><div className='container'><img src={dominos} className="w-100 col-3 rounded" alt="dominos" /></div></Slide>
+              <Slide index={2}><div className='container'><img src={ebay} className="w-100 rounded col-3" alt="ebay" /></div></Slide>
+              <Slide index={3}><div className='container'><img src={gamestop} className="w-100 rounded col-3" alt='gamestop' /></div></Slide>
+              <Slide index={4}><div className='container'><img src={google} className="w-100 rounded col-3" alt="google" /></div></Slide>
+              <Slide index={5}><div className='container'><img src={hulu} className="w-100 rounded col-3" alt="hulu" /></div></Slide>
+              <Slide index={6}><div className='container'><img src={itunes} alt="itunes" className='w-100 rounded col-3' /></div></Slide>
+              <Slide index={7}><div className='container'><img src={netflix} alt="netflix" className='w-100 rounded col-3' /></div></Slide>
+              <Slide index={8}><div className='container'><img src={sephora} alt="sephora" className='w-100 rounded col-3<' /></div></Slide>
+              <Slide index={9}><div className='container'><img src={spotify} alt="spotify" className='w-100 rounded col-12' /></div></Slide>
+              <Slide index={10}><div className='container col-12'><img src={uber} alt="uber" className='w-100 rounded col-12' /></div></Slide>
+              <Slide index={11}><div className='container col-12'><img src={walmart} alt="walmart" className="w-100 rounded col-12" /></div></Slide>
+
+            </Slider>
 
 
-        <Slider>
-
-          <Slide index={0}><img src={amazon} className="w-75 col-4 rounded" alt="set" /></Slide>
-          <Slide index={1}><img src={dominos} className="w-75 col-4 rounded" alt="dominos" /></Slide>
-          <Slide index={2}><img src={ebay} className="w-75 rounded col-4" alt="ebay" /></Slide>
-          <Slide index={3}><img src={gamestop} className="w-75 rounded col-4" alt='gamestop' /></Slide>
-          <Slide index={4}><img src={google} className="w-75 rounded col-4" alt="google" /></Slide>
-          <Slide index={5}><img src={hulu} className="w-75 rounded col-4" alt="hulu" /></Slide>
-          <Slide index={6}><img src={itunes} alt="itunes" className='w-75 rounded col-4' /></Slide>
-          <Slide index={7}><img src={netflix} alt="netflix" className='w-75 rounded col-4' /></Slide>
-          <Slide index={8}><img src={sephora} alt="sephora" className='w-75 rounded col-4' /></Slide>
-          <Slide index={9}><img src={spotify} alt="spotify" className='w-75 rounded col-4' /></Slide>
-          <Slide index={10}><img src={uber} alt="uber" className='w-75 rounded col-4' /></Slide>
-          <Slide index={11}><img src={walmart} alt="walmart" className="w-75 rounded col-4" /></Slide>
-
-        </Slider>
-
-
-      </CarouselProvider>
-
-
+          </CarouselProvider>
+        </div>
+      </div>
       <div className='w-100'>
         <img src={Giftcard} alt="giftcard" width={"90%"} />
       </div>
@@ -240,13 +273,13 @@ function content() {
           <div className='row d-flex  justify-content-center'>
             <div className='col-lg-2 col-5 col-sm-5'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faApple} /> DOWNLOAD ON <br /> Apple Store</button></div>
 
-            <div className='col-lg-2 col-5 col-sm-2'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faGooglePlay} /> DOWNLOAD ON <br /> PlayStore</button></div>
+            <div className='col-lg-2 col-5 col-sm-5'><button className='btn rounded' style={{ background: '#835ba4', fontSize: '12px', color: 'white' }}><FontAwesomeIcon icon={faGooglePlay} /> DOWNLOAD ON <br /> PlayStore</button></div>
           </div>
         </div>
       </div>
 
       <div className='pb-5 container'>
-        <img src={whatsapp} alt='whatsapp' className='col-12'/>
+        <img src={whatsapp} alt='whatsapp' className='col-12' />
         <div className='pb-5'>
           <button className='btn rounded text-light' style={{ background: '#835ba4' }}><FontAwesomeIcon icon={faWhatsapp} /> Chat with us on whatsapp</button>
         </div>
