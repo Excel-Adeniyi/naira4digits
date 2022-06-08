@@ -67,7 +67,7 @@ function Navbar() {
 
                     <div className='row mt-4 ms-3'>
                         <div className='col'><button className='rounded-pill btn btn-light'>Register</button></div>
-                        <div className='col'><button className='rounded-pill btn btn-light'>Login</button></div>
+                        <div className='col'><a href='/Login'><button className='rounded-pill btn btn-light'>Login</button></a></div>
                     </div>
 
                     <div className='fixed-bottom d-flex justify-content-between w-50 ms-5 pb-3'>
