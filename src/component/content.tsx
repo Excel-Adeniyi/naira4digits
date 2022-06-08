@@ -29,11 +29,13 @@ import Backg from '../img/image/nairaM.png'
 import Giftcard from '../img/new/3s.png'
 import Mobile from '../img/image/1g.gif'
 import { ButtonBack, ButtonFirst, ButtonLast, ButtonNext, ButtonPlay, CarouselProvider, Slide, Slider } from 'pure-react-carousel'
+import Navbar from './Navbar'
+import BottomNav from './BottomNav'
 
 function content() {
   return (
     <div>
-
+<Navbar/>
    
       <DaveDiv>
         <div className='pt-5 pb-3'>
@@ -282,10 +284,11 @@ function content() {
       <div className='pb-5 container'>
         <img src={whatsapp} alt='whatsapp' className='col-12' />
         <div className='pb-5'>
+          <h3 className='mb-3'>Do you need help?</h3>
           <button className='btn rounded text-light' style={{ background: '#835ba4' }}><FontAwesomeIcon icon={faWhatsapp} /> Chat with us on whatsapp</button>
         </div>
       </div>
-
+      <BottomNav />
     </div>
   )
 }

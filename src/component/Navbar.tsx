@@ -7,6 +7,7 @@ import second from '../img/N4D single.png'
 import { DivClass } from '../styled/navstyle';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
@@ -33,8 +34,12 @@ function Navbar() {
                 </ul>
 
                 <ul className='navbar-nav px-3'>
-                    <li className='nav-link nav-item d-none d-lg-block'><button className='rounded-pill'>Register</button></li>
-                    <li className='nav-link nav-item d-none d-lg-block'><button className='rounded-pill'>Login</button></li>
+                    <li className='nav-link nav-item d-none d-lg-block'>
+                        <a><button className='rounded-pill'>Register</button></a>
+                    </li>
+                    <li className='nav-link nav-item d-none d-lg-block'>
+                        <a href='/Login'><button className='rounded-pill'>Login</button></a>
+                    </li>
                 </ul>
 
 

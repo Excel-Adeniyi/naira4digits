@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import Navbar from './component/Navbar';
 import BottomNav from './component/BottomNav';
+import Copyright from './component/copyright';
 
 library.add(
   fab, fas
@@ -18,9 +19,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
 
-    <Navbar />
+    
     <App />
-    <BottomNav />
+    <Copyright />
   </React.StrictMode>
 );
 
