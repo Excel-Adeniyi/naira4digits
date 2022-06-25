@@ -48,11 +48,11 @@ function content() {
             <button className='btn btn-light rounded-pill w-lg-50' >Register</button>
           </div>
           <div className='col-3'>
-            <button className='btn btn-light rounded-pill w-lg-50'> Login</button>
+          <a href='/Login'><button className='btn btn-light rounded-pill w-lg-50'> Login</button></a>
           </div>
         </div>
-
-        <div className='container row '>
+<div className='justify-content-center ms-lg-5'>
+        <div className='container row ms-lg-5 '>
 
           <table className='w-sm-50'>
             <thead>
@@ -95,6 +95,7 @@ function content() {
               </tr>
             </tbody>
           </table>
+        </div>
         </div>
         <div className='container-fluid col-sm-12 col-lg-12 pt-4 d-flex justify-content-center'>
           <div className='card w-sm-100 w-lg-100 pb-2 rounded d-flex justify-content-center ' style={{ background: '#201c20', width: '69%' }}>
