@@ -4,8 +4,7 @@ import Dashback from '../../img/nairaba.png'
 import barcode from '../../img/barc.png'
 import btc from '../../img/bitcoin.png'
 import ltc from '../../img/litecoin (1).png'
-import { LineChart, Line } from 'recharts'
-import { curveCardinal } from "d3-shape";
+
 
 
 
