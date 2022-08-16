@@ -1,0 +1,5 @@
+export { default as GiftCard } from './giftcard/giftcard'
+export { default as Dashbnav } from './Components/nav/dashbnav'
+export { default as Footer } from './Components/pagecontent/footer'
+export { default as Balance } from './Components/FirstBoard/Balance'
+export { default as Selectgift } from './Components/SecondBoard/select'

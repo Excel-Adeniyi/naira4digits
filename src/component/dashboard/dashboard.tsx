@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { faArrowAltCircleLeft, faBank, faBars, faBarsStaggered, faBoltLightning, faCircleInfo, faClockRotateLeft, faCreditCard, faHome, faMoneyBillTransfer, faRectangleAd, faThumbsUp, faWallet } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Dashback from '../../img/nairaba.png'
@@ -11,8 +12,8 @@ import ltc from '../../img/litecoin (1).png'
 import React from 'react'
 import styled from 'styled-components';
 import { faBtc } from '@fortawesome/free-brands-svg-icons';
-import Dashbnav from './nav/dashbnav'
-import Footer from './pagecontent/footer'
+import { Dashbnav } from '../Interface'
+import { Footer } from '../Interface/index'
 
 
 function dashboard() {

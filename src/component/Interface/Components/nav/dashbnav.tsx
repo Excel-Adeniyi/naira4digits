@@ -1,9 +1,9 @@
 import React from 'react'
 import SideBarComp from './sidebar'
-import logo from '../../../img/N4D single Transpenrent.png'
+import logo from '../../../../img/N4D single Transpenrent.png'
 function dashbnav() {
     return (
-        <div> <div className='mb-5 row pt-2'>
+        <div> <div className='mb-5 row pt-2 container-fluid'>
             <div className='col'> <SideBarComp /></div>
 
             <div className='col pt-2 text-white'>
